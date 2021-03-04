@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "home_pages",
+  "collectionName": "projects",
   "info": {
-    "name": "Home Page",
+    "name": "Project",
     "description": ""
   },
   "options": {
@@ -11,8 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "avatar": {
-      "model": "file",
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -22,20 +25,11 @@
       "plugin": "upload",
       "required": false
     },
-    "personal_tags": {
-      "type": "json"
-    },
-    "personal_description": {
+    "description": {
       "type": "richtext"
     },
-    "linked_in_url": {
-      "type": "string"
-    },
-    "twitter_url": {
-      "type": "string"
-    },
-    "github_url": {
-      "type": "string"
+    "technologies": {
+      "collection": "technology"
     }
   }
 }
