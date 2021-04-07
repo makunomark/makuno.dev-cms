@@ -30,6 +30,15 @@
     },
     "technologies": {
       "collection": "technology"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "headline": {
+      "type": "string"
     }
   }
 }
